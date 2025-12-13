@@ -1,0 +1,214 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "services": "Services",
+        "expertise": "Expertise",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title_start": "Ingénieur Senior Data &",
+        "title_end": "Streaming",
+        "subtitle": "Architecture de plateformes de streaming de données résilientes à l'échelle du pétaoctet et infrastructures cloud",
+        "bio": "Je transforme des défis de données complexes en systèmes de production fiables. Avec plus de 10 ans d'expertise approfondie en <1>Apache Kafka</1>, <3>Kubernetes</3> et <5>AWS</5>, j'aide les organisations à construire des architectures tolérantes aux pannes qui passent à l'échelle.",
+        "contact_me": "Me Contacter",
+        "view_services": "Voir les Services"
+    },
+    "services": {
+        "badge": "SOLUTIONS COMPLÈTES",
+        "title": "Services",
+        "description": "Solutions d'ingénierie complètes pour la construction et la mise à l'échelle de plateformes de données modernes, d'infrastructures cloud et de systèmes distribués",
+        "key_capabilities": "Capacités Clés",
+        "production_ready": "Solutions prêtes pour la production",
+        "cards": {
+            "data": {
+                "title": "Plateforme de Données & Ingénierie Streaming",
+                "description": "Conception et implémentation de bout en bout de plateformes de données modernes conçues pour l'échelle, la fiabilité et le traitement en temps réel.",
+                "details": "J'architecture et construis des plateformes de données de niveau production qui traitent des millions d'événements par seconde, assurant la cohérence des données, la tolérance aux pannes et la sémantique exactly-once. De l'ingestion des données aux sorties prêtes pour l'analytique, je conçois des systèmes qui alimentent les décisions critiques de l'entreprise.",
+                "features": [
+                    "Architectures de streaming temps réel utilisant Apache Kafka et AWS MSK",
+                    "Microservices événementiels avec garanties de traitement exactly-once",
+                    "Systèmes de réconciliation de données assurant la cohérence entre systèmes distribués",
+                    "Pipelines ETL/ELT pour les charges de travail batch et streaming",
+                    "Évolution de schémas et cadres de qualité des données",
+                    "Lacs de données et entrepôts de données prêts pour l'analytique"
+                ]
+            },
+            "cloud": {
+                "title": "Infrastructure Cloud & DevOps",
+                "description": "Infrastructure cloud prête pour la production sur AWS et Kubernetes, automatisée avec l'Infrastructure as Code et les meilleures pratiques CI/CD.",
+                "details": "Je construis une infrastructure cloud sécurisée, évolutive et rentable qui prend en charge les exigences de haute disponibilité. En utilisant des pratiques DevOps modernes, je crée des pipelines de déploiement automatisés qui permettent des versions rapides et fiables tout en maintenant la stabilité et l'observabilité du système.",
+                "features": [
+                    "Conception et gestion de clusters Kubernetes (EKS, autogéré)",
+                    "Infrastructure as Code utilisant Terraform et Terragrunt",
+                    "Pipelines CI/CD avec flux de travail GitOps (ArgoCD, Tekton)",
+                    "Orchestration de conteneurs et déploiement de microservices",
+                    "Surveillance, journalisation et alerte avec une observabilité complète",
+                    "Optimisation des coûts et stratégies de gestion des ressources"
+                ]
+            },
+            "backend": {
+                "title": "Ingénierie Backend & API",
+                "description": "Systèmes backend et API haute performance construits avec des architectures modernes, conçus pour l'échelle, la maintenabilité et l'expérience développeur.",
+                "details": "Je développe des services backend robustes utilisant Java, Golang, Python et Node.js, en appliquant des modèles de microservices, des principes d'architecture propre et les meilleures pratiques de conception d'API. Je me concentre sur la construction de systèmes performants sous charge, faciles à maintenir et à étendre.",
+                "features": [
+                    "Conception et implémentation d'API RESTful et GraphQL",
+                    "Architecture de microservices avec des frontières de domaine appropriées",
+                    "Services haute performance traitant des millions de requêtes par jour",
+                    "Optimisation de base de données et stratégies de mise en cache (Redis, PostgreSQL, MongoDB)",
+                    "Authentification, autorisation et meilleures pratiques de sécurité",
+                    "Stratégies de test complètes (unitaires, intégration, E2E)"
+                ]
+            },
+            "consulting": {
+                "title": "Conseil Technique & Architecture",
+                "description": "Conseils techniques de niveau senior pour les organisations construisant ou mettant à l'échelle des systèmes distribués complexes et des plateformes de données.",
+                "details": "Je fournis des conseils techniques stratégiques pour aider les équipes à prendre des décisions architecturales éclairées, à éviter les pièges courants et à établir les meilleures pratiques d'ingénierie. Que vous ayez besoin d'une revue d'architecture, d'une stratégie de migration ou de conseils pratiques, j'apporte plus de 10 ans d'expérience en production.",
+                "features": [
+                    "Revues d'architecture et consultations de conception système",
+                    "Stratégie de données et conception d'architecture streaming",
+                    "Planification et exécution de migration de systèmes existants",
+                    "Sélection de technologies et recommandations de stack",
+                    "Mentorat d'équipe et meilleures pratiques d'ingénierie",
+                    "Optimisation des performances et dépannage"
+                ]
+            }
+        },
+        "stats": {
+            "experience": "<0>10+ ans</0> d'expérience en production construisant et mettant à l'échelle des systèmes qui traitent <2>des milliards d'événements</2> et servent <4>des millions d'utilisateurs</4>",
+            "reliability": "Fiabilité au niveau entreprise",
+            "practices": "Meilleures pratiques & modèles",
+            "scalable": "Architectures évolutives"
+        }
+    },
+    "expertise": {
+        "badge": "10+ ANS D'EXPÉRIENCE",
+        "title": "Expertise Technique",
+        "description": "Expertise approfondie à travers la pile moderne d'ingénierie de données, d'infrastructure cloud et de systèmes distribués",
+        "categories": {
+            "languages": "Langages de Programmation",
+            "backend": "Technologies Backend & Web",
+            "data": "Stockage de Données & Streaming",
+            "cloud": "Cloud & Infrastructure"
+        },
+        "skills": {
+            "java": {
+                "desc": "Applications d'entreprise, microservices Spring Boot, systèmes distribués haute performance"
+            },
+            "golang": {
+                "desc": "Services cloud-native, systèmes à haute concurrence, outils CLI, programmation système"
+            },
+            "python": {
+                "desc": "Pipelines de données, cadres d'automatisation, outils d'infrastructure, développement d'API"
+            },
+            "nodejs": {
+                "desc": "Services temps réel, architectures événementielles, API backend, outils de build"
+            },
+            "linux": {
+                "desc": "Administration système, automatisation DevOps, pipelines CI/CD, gestion d'infrastructure"
+            },
+            "c": {
+                "desc": "Programmation système, maintenance de systèmes existants, traitement de texte, optimisation des performances"
+            },
+            "spring": {
+                "desc": "Cadre Java d'entreprise, API REST, architecture microservices, systèmes de production"
+            },
+            "microservices": {
+                "desc": "Maillage de services, passerelles API, traçage distribué, modèles de communication inter-services"
+            },
+            "react": {
+                "desc": "Architecture de composants, gestion d'état, hooks, développement d'interface utilisateur moderne"
+            },
+            "javascript": {
+                "desc": "Modèles asynchrones, promesses, programmation fonctionnelle, fonctionnalités linguistiques modernes"
+            },
+            "html": {
+                "desc": "Balisage sémantique, Flexbox/Grid, conception adaptative, meilleures pratiques d'accessibilité"
+            },
+            "cypress": {
+                "desc": "Tests E2E, tests d'intégration, automatisation de tests, pipelines de tests continus"
+            },
+            "kafka": {
+                "desc": "Streaming d'événements, pipelines temps réel, files d'attente de messages, traitement de données à haut débit"
+            },
+            "postgres": {
+                "desc": "SQL avancé, optimisation de requêtes, réplication, JSONB, transactions complexes"
+            },
+            "mysql": {
+                "desc": "Optimisation de requêtes, réplication, clustering haute disponibilité, réglage des performances"
+            },
+            "mongodb": {
+                "desc": "Modélisation de documents, pipelines d'agrégation, stratégies de sharding, ensembles de répliques"
+            },
+            "redis": {
+                "desc": "Mise en cache en mémoire, messagerie pub/sub, gestion de session, limitation de débit"
+            },
+            "elastic": {
+                "desc": "Recherche plein texte, analyse de journaux, recherche distribuée, agrégations temps réel"
+            },
+            "rocksdb": {
+                "desc": "Stockage clé-valeur embarqué, arbres LSM, moteur de stockage haute performance"
+            },
+            "cassandra": {
+                "desc": "Stockage orienté colonnes, architecture distribuée, cohérence réglable, évolutivité linéaire"
+            },
+            "oracle": {
+                "desc": "SGBD d'entreprise, procédures stockées, transactions complexes, intégration de systèmes hérités"
+            },
+            "k8s": {
+                "desc": "Orchestration, déploiements, StatefulSets, opérateurs, maillage de services, gestion de clusters"
+            },
+            "docker": {
+                "desc": "Builds multi-étapes, optimisation d'images, Docker Compose, gestion de registres"
+            },
+            "terraform": {
+                "desc": "Infrastructure as Code, gestion d'état, conception de modules, principes DRY"
+            },
+            "aws_compute": {
+                "desc": "EC2, ECS, EKS, Fargate, auto-scaling, équilibrage de charge, architecture haute disponibilité"
+            },
+            "aws_storage": {
+                "desc": "S3, RDS, Aurora, stratégies de sauvegarde, politiques de cycle de vie, reprise après sinistre"
+            },
+            "aws_network": {
+                "desc": "VPC, sous-réseaux, groupes de sécurité, ALB, Route53, CloudFront, connectivité privée"
+            },
+            "aws_msk": {
+                "desc": "Clusters Kafka gérés, files d'attente de messages, architectures événementielles, traitement asynchrone"
+            },
+            "helm": {
+                "desc": "Modèles de graphiques, gestion des versions, versionnement de paquets, gestion des dépendances"
+            },
+            "gitops": {
+                "desc": "Flux de travail GitOps, livraison continue, automatisation de pipelines, déploiements déclaratifs"
+            }
+        }
+    },
+    "contact": {
+        "title_start": "Travaillons",
+        "title_end": "Ensemble",
+        "subtitle": "Vous travaillez sur quelque chose de complexe ? Rendons-le fiable et évolutif.",
+        "info": {
+            "title": "Coordonnées",
+            "email": "Email",
+            "address": "Adresse",
+            "address_val": "Bucarest, Secteur 3, Aleea Soldat Adrian Cârstea, No. 13,<br/>Bl. 37, Sc. 2, Étage 8, App. 141",
+            "availability": "Disponibilité pour conseil, missions contractuelles et partenariats à long terme. Délai de réponse généralement sous 24 heures."
+        },
+        "form": {
+            "title": "Envoyer un Message",
+            "name": "Votre Nom",
+            "name_placeholder": "Votre Nom",
+            "email": "Adresse Email",
+            "email_placeholder": "votre.email@exemple.com",
+            "message": "Votre Message",
+            "message_placeholder": "Parlez-moi de votre projet, de vos défis ou de la manière dont je peux vous aider...",
+            "submit": "Envoyer le Message",
+            "sending": "Envoi en cours...",
+            "success": "Message envoyé avec succès ! Je vous répondrai bientôt.",
+            "error": "Échec de l'envoi du message. Veuillez réessayer ou envoyer un email directement."
+        }
+    },
+    "footer": {
+        "copyright": "&copy; {{year}} Adil Houmadi PFA. Tous droits réservés."
+    }
+}

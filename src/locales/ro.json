@@ -1,0 +1,214 @@
+{
+    "navbar": {
+        "home": "Acasă",
+        "services": "Servicii",
+        "expertise": "Expertiză",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title_start": "Inginer Senior Streaming &",
+        "title_end": "Date",
+        "subtitle": "Arhitectură de platforme de streaming de date reziliente la scară petabyte și infrastructură cloud",
+        "bio": "Transform provocările complexe legate de date în sisteme de producție fiabile. Cu peste 10 ani de expertiză profundă în <1>Apache Kafka</1>, <3>Kubernetes</3> și <5>AWS</5>, ajut organizațiile să construiască arhitecturi tolerante la erori care scalează.",
+        "contact_me": "Contactează-mă",
+        "view_services": "Vezi Serviciile"
+    },
+    "services": {
+        "badge": "SOLUȚII COMPLETE",
+        "title": "Servicii",
+        "description": "Soluții complete de inginerie pentru construirea și scalarea platformelor moderne de date, infrastructură cloud și sisteme distribuite",
+        "key_capabilities": "Capacități Cheie",
+        "production_ready": "Soluții gata de producție",
+        "cards": {
+            "data": {
+                "title": "Platformă de Date & Inginerie Streaming",
+                "description": "Proiectare și implementare end-to-end a platformelor moderne de date construite pentru scalabilitate, fiabilitate și procesare în timp real.",
+                "details": "Arhitectez și construiesc platforme de date la nivel de producție care procesează milioane de evenimente pe secundă, asigurând consistența datelor, toleranța la erori și semantica exactly-once. De la ingestia de date la rezultate gata pentru analiză, proiectez sisteme care alimentează deciziile critice de afaceri.",
+                "features": [
+                    "Arhitecturi de streaming în timp real folosind Apache Kafka și AWS MSK",
+                    "Microservicii bazate pe evenimente cu garanții de procesare exactly-once",
+                    "Sisteme de reconciliere a datelor asigurând consistența între sistemele distribuite",
+                    "Fluxuri ETL/ELT pentru sarcini de lucru batch și streaming",
+                    "Evoluția schemelor și cadre de calitate a datelor",
+                    "Lacuri de date și depozite de date gata pentru analiză"
+                ]
+            },
+            "cloud": {
+                "title": "Infrastructură Cloud & DevOps",
+                "description": "Infrastructură cloud gata de producție pe AWS și Kubernetes, automatizată cu Infrastructure as Code și cele mai bune practici CI/CD.",
+                "details": "Construiesc infrastructură cloud sigură, scalabilă și eficientă din punct de vedere al costurilor, care susține cerințele de disponibilitate ridicată. Folosind practici DevOps moderne, creez fluxuri de implementare automate care permit lansări rapide și fiabile, menținând în același timp stabilitatea și observabilitatea sistemului.",
+                "features": [
+                    "Proiectarea și gestionarea clusterelor Kubernetes (EKS, self-managed)",
+                    "Infrastructure as Code folosind Terraform și Terragrunt",
+                    "Fluxuri CI/CD cu workflow-uri GitOps (ArgoCD, Tekton)",
+                    "Orchestrarea containerelor și implementarea microserviciilor",
+                    "Monitorizare, logare și alertare cu observabilitate completă",
+                    "Optimizarea costurilor și strategii de gestionare a resurselor"
+                ]
+            },
+            "backend": {
+                "title": "Inginerie Backend & API",
+                "description": "Sisteme backend și API-uri de înaltă performanță construite cu arhitecturi moderne, concepute pentru scală, mentenanță și experiența dezvoltatorului.",
+                "details": "Dezvolt servicii backend robuste folosind Java, Golang, Python și Node.js, aplicând modele de microservicii, principii de arhitectură curată și cele mai bune practici de design API. Mă concentrez pe construirea de sisteme care sunt performante sub sarcină și ușor de întreținut și extins.",
+                "features": [
+                    "Proiectare și implementare API RESTful și GraphQL",
+                    "Arhitectură de microservicii cu limite de domeniu adecvate",
+                    "Servicii de înaltă performanță care gestionează milioane de cereri pe zi",
+                    "Optimizarea bazelor de date și strategii de caching (Redis, PostgreSQL, MongoDB)",
+                    "Autentificare, autorizare și cele mai bune practici de securitate",
+                    "Strategii complete de testare (unitare, integrare, E2E)"
+                ]
+            },
+            "consulting": {
+                "title": "Consultanță Tehnică & Arhitectură",
+                "description": "Îndrumare tehnică la nivel senior pentru organizațiile care construiesc sau scalează sisteme distribuite complexe și platforme de date.",
+                "details": "Ofer consultanță tehnică strategică pentru a ajuta echipele să ia decizii arhitecturale informate, să evite capcanele comune și să stabilească cele mai bune practici de inginerie. Indiferent dacă aveți nevoie de o revizuire a arhitecturii, o strategie de migrare sau îndrumare practică, aduc peste 10 ani de experiență în producție.",
+                "features": [
+                    "Revizuiri de arhitectură și consultanță de design de sistem",
+                    "Strategie de date și design de arhitectură streaming",
+                    "Planificarea și execuția migrării sistemelor moștenite",
+                    "Selecția tehnologiei și recomandări de stivă",
+                    "Mentoratul echipei și cele mai bune practici de inginerie",
+                    "Optimizarea performanței și depanare"
+                ]
+            }
+        },
+        "stats": {
+            "experience": "<0>10+ ani</0> de experiență în producție construind și scalând sisteme care procesează <2>miliarde de evenimente</2> și servesc <4>milioane de utilizatori</4>",
+            "reliability": "Fiabilitate la nivel enterprise",
+            "practices": "Cele mai bune practici & modele",
+            "scalable": "Arhitecturi scalabile"
+        }
+    },
+    "expertise": {
+        "badge": "10+ ANI DE EXPERIENȚĂ",
+        "title": "Expertiză Tehnică",
+        "description": "Expertiză profundă în stiva modernă de inginerie de date, infrastructură cloud și sisteme distribuite",
+        "categories": {
+            "languages": "Limbaje de Programare",
+            "backend": "Tehnologii Backend & Web",
+            "data": "Stocare de Date & Streaming",
+            "cloud": "Cloud & Infrastructură"
+        },
+        "skills": {
+            "java": {
+                "desc": "Aplicații enterprise, microservicii Spring Boot, sisteme distribuite de înaltă performanță"
+            },
+            "golang": {
+                "desc": "Servicii cloud-native, sisteme cu concurență ridicată, instrumente CLI, programare de sistem"
+            },
+            "python": {
+                "desc": "Fluxuri de date, cadre de automatizare, instrumente de infrastructură, dezvoltare API"
+            },
+            "nodejs": {
+                "desc": "Servicii în timp real, arhitecturi bazate pe evenimente, API-uri backend, instrumente de build"
+            },
+            "linux": {
+                "desc": "Administrare de sistem, automatizare DevOps, fluxuri CI/CD, gestionarea infrastructurii"
+            },
+            "c": {
+                "desc": "Programare de sistem, întreținere sisteme moștenite, procesare text, optimizare performanță"
+            },
+            "spring": {
+                "desc": "Cadru Java de nivel enterprise, API-uri REST, arhitectură de microservicii, sisteme de producție"
+            },
+            "microservices": {
+                "desc": "Service mesh, gateway-uri API, trasabilitate distribuită, modele de comunicare între servicii"
+            },
+            "react": {
+                "desc": "Arhitectură de componente, gestionarea stării, hooks, dezvoltare modernă de interfețe utilizator"
+            },
+            "javascript": {
+                "desc": "Modele asincrone, promisiuni, programare funcțională, caracteristici moderne de limbaj"
+            },
+            "html": {
+                "desc": "Marcaj semantic, Flexbox/Grid, design receptiv (responsive), bune practici de accesibilitate"
+            },
+            "cypress": {
+                "desc": "Testare E2E, teste de integrare, automatizare a testelor, conducte de testare continuă"
+            },
+            "kafka": {
+                "desc": "Streaming de evenimente, conducte în timp real, cozi de mesaje, procesare de date cu debit mare"
+            },
+            "postgres": {
+                "desc": "SQL avansat, optimizarea interogărilor, replicare, JSONB, tranzacții complexe"
+            },
+            "mysql": {
+                "desc": "Optimizarea interogărilor, replicare, clustering de înaltă disponibilitate, reglarea performanței"
+            },
+            "mongodb": {
+                "desc": "Modelarea documentelor, conducte de agregare, strategii de sharding, seturi de replici"
+            },
+            "redis": {
+                "desc": "Caching în memorie, mesagerie pub/sub, gestionarea sesiunilor, limitarea ratei"
+            },
+            "elastic": {
+                "desc": "Căutare full-text, analiza jurnalelor, căutare distribuită, agregări în timp real"
+            },
+            "rocksdb": {
+                "desc": "Stocare cheie-valoare încorporată, arbori LSM, motor de stocare de înaltă performanță"
+            },
+            "cassandra": {
+                "desc": "Stocare wide-column, arhitectură distribuită, consistență reglabilă, scalabilitate liniară"
+            },
+            "oracle": {
+                "desc": "RDBMS enterprise, proceduri stocate, tranzacții complexe, integrare sisteme moștenite"
+            },
+            "k8s": {
+                "desc": "Orchestrare, implementări, StatefulSets, operatori, service mesh, gestionarea clusterelor"
+            },
+            "docker": {
+                "desc": "Build-uri multi-stage, optimizarea imaginilor, Docker Compose, gestionarea registrelor"
+            },
+            "terraform": {
+                "desc": "Infrastructure as Code, gestionarea stării, proiectarea modulelor, principii DRY"
+            },
+            "aws_compute": {
+                "desc": "EC2, ECS, EKS, Fargate, scalare automată, echilibrare de sarcină, arhitectură de înaltă disponibilitate"
+            },
+            "aws_storage": {
+                "desc": "S3, RDS, Aurora, strategii de backup, politici de ciclu de viață, recuperare în caz de dezastru"
+            },
+            "aws_network": {
+                "desc": "VPC, subnet-uri, grupuri de securitate, ALB, Route53, CloudFront, conectivitate privată"
+            },
+            "aws_msk": {
+                "desc": "Clustere Kafka gestionate, cozi de mesaje, arhitecturi bazate pe evenimente, procesare asincronă"
+            },
+            "helm": {
+                "desc": "Templatizarea chart-urilor, gestionarea lansărilor, versionarea pachetelor, gestionarea dependențelor"
+            },
+            "gitops": {
+                "desc": "Fluxuri de lucru GitOps, livrare continuă, automatizarea conductelor, implementări declarative"
+            }
+        }
+    },
+    "contact": {
+        "title_start": "Să Lucrăm",
+        "title_end": "Împreună",
+        "subtitle": "Lucrați la ceva complex? Haideți să-l facem fiabil și scalabil.",
+        "info": {
+            "title": "Informații de Contact",
+            "email": "Email",
+            "address": "Adresă",
+            "address_val": "București, Sector 3, Aleea Soldat Adrian Cârstea, Nr. 13,<br/>Bl. 37, Sc. 2, Et. 8, Ap. 141",
+            "availability": "Disponibil pentru consultanță, contracte și parteneriate pe termen lung. Timpul de răspuns este de obicei sub 24 de ore."
+        },
+        "form": {
+            "title": "Trimite un Mesaj",
+            "name": "Numele Tău",
+            "name_placeholder": "Numele Tău",
+            "email": "Adresa de Email",
+            "email_placeholder": "emailul.tau@exemplu.com",
+            "message": "Mesajul Tău",
+            "message_placeholder": "Spune-mi despre proiectul tău, provocări sau cum te pot ajuta...",
+            "submit": "Trimite Mesaj",
+            "sending": "Se trimite...",
+            "success": "Mesaj trimis cu succes! Vă voi răspunde în curând.",
+            "error": "Trimiterea mesajului a eșuat. Vă rugăm să încercați din nou sau să trimiteți un email direct."
+        }
+    },
+    "footer": {
+        "copyright": "&copy; {{year}} Adil Houmadi PFA. Toate drepturile rezervate."
+    }
+}

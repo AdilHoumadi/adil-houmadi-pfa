@@ -1,0 +1,214 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "expertise": "Expertise",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title_start": "Senior Streaming & Data",
+        "title_end": "Engineer",
+        "subtitle": "Architecting resilient, petabyte-scale streaming data platforms and cloud infrastructure",
+        "bio": "I transform complex data challenges into reliable production systems. With 10+ years of deep expertise in <1>Apache Kafka</1>, <3>Kubernetes</3>, and <5>AWS</5>, I help organizations build fault-tolerant architectures that scale.",
+        "contact_me": "Contact Me",
+        "view_services": "View Services"
+    },
+    "services": {
+        "badge": "COMPREHENSIVE SOLUTIONS",
+        "title": "Services",
+        "description": "Comprehensive engineering solutions for building and scaling modern data platforms, cloud infrastructure, and distributed systems",
+        "key_capabilities": "Key Capabilities",
+        "production_ready": "Production-ready solutions",
+        "cards": {
+            "data": {
+                "title": "Data Platform & Streaming Engineering",
+                "description": "End-to-end design and implementation of modern data platforms built for scale, reliability, and real-time processing.",
+                "details": "I architect and build production-grade data platforms that process millions of events per second, ensuring data consistency, fault tolerance, and exactly-once semantics. From data ingestion to analytics-ready outputs, I design systems that power business-critical decisions.",
+                "features": [
+                    "Real-time streaming architectures using Apache Kafka and AWS MSK",
+                    "Event-driven microservices with exactly-once processing guarantees",
+                    "Data reconciliation systems ensuring consistency across distributed systems",
+                    "ETL/ELT pipelines for batch and streaming workloads",
+                    "Schema evolution and data quality frameworks",
+                    "Analytics-ready data lakes and warehouses"
+                ]
+            },
+            "cloud": {
+                "title": "Cloud Infrastructure & DevOps",
+                "description": "Production-ready cloud infrastructure on AWS and Kubernetes, automated with Infrastructure as Code and CI/CD best practices.",
+                "details": "I build secure, scalable, and cost-efficient cloud infrastructure that supports high-availability requirements. Using modern DevOps practices, I create automated deployment pipelines that enable rapid, reliable releases while maintaining system stability and observability.",
+                "features": [
+                    "Kubernetes cluster design and management (EKS, self-managed)",
+                    "Infrastructure as Code using Terraform and Terragrunt",
+                    "CI/CD pipelines with GitOps workflows (ArgoCD, Tekton)",
+                    "Container orchestration and microservices deployment",
+                    "Monitoring, logging, and alerting with comprehensive observability",
+                    "Cost optimization and resource management strategies"
+                ]
+            },
+            "backend": {
+                "title": "Backend & API Engineering",
+                "description": "High-performance backend systems and APIs built with modern architectures, designed for scale, maintainability, and developer experience.",
+                "details": "I develop robust backend services using Java, Golang, Python, and Node.js, applying microservices patterns, clean architecture principles, and API design best practices. My focus is on building systems that are both performant under load and easy to maintain and extend.",
+                "features": [
+                    "RESTful and GraphQL API design and implementation",
+                    "Microservices architecture with proper domain boundaries",
+                    "High-performance services handling millions of requests per day",
+                    "Database optimization and caching strategies (Redis, PostgreSQL, MongoDB)",
+                    "Authentication, authorization, and security best practices",
+                    "Comprehensive testing strategies (unit, integration, E2E)"
+                ]
+            },
+            "consulting": {
+                "title": "Technical Consulting & Architecture",
+                "description": "Senior-level technical guidance for organizations building or scaling complex distributed systems and data platforms.",
+                "details": "I provide strategic technical consulting to help teams make informed architectural decisions, avoid common pitfalls, and establish engineering best practices. Whether you need an architecture review, migration strategy, or hands-on guidance, I bring 10+ years of production experience.",
+                "features": [
+                    "Architecture reviews and system design consultations",
+                    "Data strategy and streaming architecture design",
+                    "Legacy system migration planning and execution",
+                    "Technology selection and stack recommendations",
+                    "Team mentoring and engineering best practices",
+                    "Performance optimization and troubleshooting"
+                ]
+            }
+        },
+        "stats": {
+            "experience": "<0>10+ years</0> of production experience building and scaling systems that process <2>billions of events</2> and serve <4>millions of users</4>",
+            "reliability": "Enterprise-grade reliability",
+            "practices": "Best practices & patterns",
+            "scalable": "Scalable architectures"
+        }
+    },
+    "expertise": {
+        "badge": "10+ YEARS EXPERIENCE",
+        "title": "Technical Expertise",
+        "description": "Deep expertise across the modern data engineering, cloud infrastructure, and distributed systems stack",
+        "categories": {
+            "languages": "Programming Languages",
+            "backend": "Backend & Web Technologies",
+            "data": "Data Storage & Streaming",
+            "cloud": "Cloud & Infrastructure"
+        },
+        "skills": {
+            "java": {
+                "desc": "Enterprise applications, Spring Boot microservices, high-performance distributed systems"
+            },
+            "golang": {
+                "desc": "Cloud-native services, high-concurrency systems, CLI tools, system programming"
+            },
+            "python": {
+                "desc": "Data pipelines, automation frameworks, infrastructure tooling, API development"
+            },
+            "nodejs": {
+                "desc": "Real-time services, event-driven architectures, backend APIs, build tooling"
+            },
+            "linux": {
+                "desc": "System administration, DevOps automation, CI/CD pipelines, infrastructure management"
+            },
+            "c": {
+                "desc": "System-level programming, legacy maintenance, text processing, performance optimization"
+            },
+            "spring": {
+                "desc": "Enterprise Java framework, REST APIs, microservices architecture, production systems"
+            },
+            "microservices": {
+                "desc": "Service mesh, API gateways, distributed tracing, inter-service communication patterns"
+            },
+            "react": {
+                "desc": "Component architecture, state management, hooks, modern UI development"
+            },
+            "javascript": {
+                "desc": "Async patterns, promises, functional programming, modern language features"
+            },
+            "html": {
+                "desc": "Semantic markup, Flexbox/Grid, responsive design, accessibility best practices"
+            },
+            "cypress": {
+                "desc": "E2E testing, integration tests, test automation, continuous testing pipelines"
+            },
+            "kafka": {
+                "desc": "Event streaming, real-time pipelines, message queues, high-throughput data processing"
+            },
+            "postgres": {
+                "desc": "Advanced SQL, query optimization, replication, JSONB, complex transactions"
+            },
+            "mysql": {
+                "desc": "Query optimization, replication, high-availability clustering, performance tuning"
+            },
+            "mongodb": {
+                "desc": "Document modeling, aggregation pipelines, sharding strategies, replica sets"
+            },
+            "redis": {
+                "desc": "In-memory caching, pub/sub messaging, session management, rate limiting"
+            },
+            "elastic": {
+                "desc": "Full-text search, log analytics, distributed search, real-time aggregations"
+            },
+            "rocksdb": {
+                "desc": "Embedded key-value store, LSM trees, high-performance storage engine"
+            },
+            "cassandra": {
+                "desc": "Wide-column store, distributed architecture, tunable consistency, linear scalability"
+            },
+            "oracle": {
+                "desc": "Enterprise RDBMS, stored procedures, complex transactions, legacy system integration"
+            },
+            "k8s": {
+                "desc": "Orchestration, deployments, StatefulSets, operators, service mesh, cluster management"
+            },
+            "docker": {
+                "desc": "Multi-stage builds, image optimization, Docker Compose, registry management"
+            },
+            "terraform": {
+                "desc": "Infrastructure as Code, state management, module design, DRY principles"
+            },
+            "aws_compute": {
+                "desc": "EC2, ECS, EKS, Fargate, auto-scaling, load balancing, high-availability architecture"
+            },
+            "aws_storage": {
+                "desc": "S3, RDS, Aurora, backup strategies, lifecycle policies, disaster recovery"
+            },
+            "aws_network": {
+                "desc": "VPC, subnets, security groups, ALB, Route53, CloudFront, private connectivity"
+            },
+            "aws_msk": {
+                "desc": "Managed Kafka clusters, message queuing, event-driven architectures, async processing"
+            },
+            "helm": {
+                "desc": "Chart templating, release management, package versioning, dependency management"
+            },
+            "gitops": {
+                "desc": "GitOps workflows, continuous delivery, pipeline automation, declarative deployments"
+            }
+        }
+    },
+    "contact": {
+        "title_start": "Let's Work",
+        "title_end": "Together",
+        "subtitle": "Are you working on something complex? Let's make it reliable and scalable.",
+        "info": {
+            "title": "Contact Information",
+            "email": "Email",
+            "address": "Address",
+            "address_val": "Bucharest, District 3, Aleea Soldat Adrian Cârstea, No. 13,<br/>Bl. 37, Sc. 2, Floor 8, Apt. 141",
+            "availability": "Available for consulting, contract work, and long-term partnerships. Response time is typically within 24 hours."
+        },
+        "form": {
+            "title": "Send a Message",
+            "name": "Your Name",
+            "name_placeholder": "Your Name",
+            "email": "Email Address",
+            "email_placeholder": "your.email@example.com",
+            "message": "Your Message",
+            "message_placeholder": "Tell me about your project, challenges, or how I can help...",
+            "submit": "Send Message",
+            "sending": "Sending...",
+            "success": "Message sent successfully! I'll get back to you soon.",
+            "error": "Failed to send message. Please try again or email directly."
+        }
+    },
+    "footer": {
+        "copyright": "&copy; {{year}} Adil Houmadi PFA. All rights reserved."
+    }
+}
