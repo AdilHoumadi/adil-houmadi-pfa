@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Send, CheckCircle, AlertCircle, User } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { ContactItem } from './ContactItem';
+import { FormInput } from './FormInput';
 
 interface ContactSectionProps {
     visibleSections: Set<string>;
 }
+
+const FORM_ENDPOINT = "https://formsubmit.co/adil.houmadi.pfa@gmail.com";
 
 export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections }) => {
     const { t } = useTranslation();
@@ -18,7 +22,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
         const formData = new FormData(form);
 
         try {
-            const response = await fetch("https://formsubmit.co/b6c862fa953942f066ede6e8396a9643", {
+            const response = await fetch(FORM_ENDPOINT, {
                 method: "POST",
                 body: formData,
                 headers: {
@@ -42,6 +46,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
         }
     };
 
+    const isVisible = visibleSections.has('contact');
+
     return (
         <section id="contact" className="py-24 relative overflow-hidden" data-section="contact">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-teal-900/10 to-transparent pointer-events-none" />
@@ -49,7 +55,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
             <div className="container mx-auto px-6 relative">
                 <div className="text-center mb-20">
                     <h2
-                        className={`text-5xl md:text-6xl font-bold mb-6 transition-all duration-700 ${visibleSections.has('contact') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                        className={`text-5xl md:text-6xl font-bold mb-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                             }`}
                     >
                         {t('contact.title_start')}{' '}
@@ -58,7 +64,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
                         </span>
                     </h2>
                     <p
-                        className={`text-xl text-gray-400 max-w-2xl mx-auto transition-all duration-700 delay-100 ${visibleSections.has('contact') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                        className={`text-xl text-gray-400 max-w-2xl mx-auto transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                             }`}
                     >
                         {t('contact.subtitle')}
@@ -67,40 +73,29 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
 
                 <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
                     <div
-                        className={`space-y-8 transition-all duration-700 delay-200 ${visibleSections.has('contact') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+                        className={`space-y-8 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                             }`}
                     >
                         <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800">
                             <h3 className="text-2xl font-bold text-white mb-6">{t('contact.info.title')}</h3>
                             <div className="space-y-6">
-                                <div className="flex items-start space-x-4">
-                                    <div className="p-3 bg-teal-500/10 rounded-lg">
-                                        <Mail className="w-6 h-6 text-teal-400" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-400 mb-1">{t('contact.info.email')}</p>
-                                        <a
-                                            href="mailto:contact@adil.ro"
-                                            className="text-lg text-white hover:text-teal-400 transition-colors"
-                                        >
-                                            contact@adil.ro
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="flex items-start space-x-4">
-                                    <div className="p-3 bg-teal-500/10 rounded-lg">
-                                        <MapPin className="w-6 h-6 text-teal-400" />
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-400 mb-1">{t('contact.info.address')}</p>
-                                        <p
-                                            className="text-white leading-relaxed"
-                                            dangerouslySetInnerHTML={{
-                                                __html: t('contact.info.address_val'),
-                                            }}
-                                        />
-                                    </div>
-                                </div>
+                                <ContactItem icon={Mail} label={t('contact.info.email')}>
+                                    <a
+                                        href="mailto:contact@adil.ro"
+                                        className="text-lg text-white hover:text-teal-400 transition-colors"
+                                    >
+                                        contact@adil.ro
+                                    </a>
+                                </ContactItem>
+
+                                <ContactItem icon={MapPin} label={t('contact.info.address')}>
+                                    <p
+                                        className="text-white leading-relaxed"
+                                        dangerouslySetInnerHTML={{
+                                            __html: t('contact.info.address_val'),
+                                        }}
+                                    />
+                                </ContactItem>
                             </div>
 
                             <div className="mt-8 pt-8 border-t border-gray-800">
@@ -112,12 +107,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
                     </div>
 
                     <div
-                        className={`bg-gray-900/50 p-8 rounded-2xl border border-gray-800 transition-all duration-700 delay-300 ${visibleSections.has('contact') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+                        className={`bg-gray-900/50 p-8 rounded-2xl border border-gray-800 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
                             }`}
                     >
                         <h3 className="text-2xl font-bold text-white mb-6">{t('contact.form.title')}</h3>
                         <form
-                            action="https://formsubmit.co/b6c862fa953942f066ede6e8396a9643"
+                            action={FORM_ENDPOINT}
                             method="POST"
                             onSubmit={handleSubmit}
                             className="space-y-6"
@@ -125,51 +120,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
                             <input type="hidden" name="_subject" value="New Contact Form Submission" />
                             <input type="hidden" name="_template" value="table" />
 
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
-                                    {t('contact.form.name')}
-                                </label>
-                                <div className="relative">
-                                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        required
-                                        className="w-full pl-11 pr-4 py-3 bg-gray-950 border border-gray-800 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-600"
-                                        placeholder={t('contact.form.name_placeholder')}
-                                    />
-                                </div>
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-400 mb-2">
-                                    {t('contact.form.email')}
-                                </label>
-                                <div className="relative">
-                                    <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        required
-                                        className="w-full pl-11 pr-4 py-3 bg-gray-950 border border-gray-800 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-600"
-                                        placeholder={t('contact.form.email_placeholder')}
-                                    />
-                                </div>
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">
-                                    {t('contact.form.message')}
-                                </label>
-                                <textarea
-                                    name="message"
-                                    id="message"
-                                    required
-                                    rows={4}
-                                    className="w-full px-4 py-3 bg-gray-950 border border-gray-800 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all text-white placeholder-gray-600 resize-none"
-                                    placeholder={t('contact.form.message_placeholder')}
-                                />
-                            </div>
+                            <FormInput
+                                id="name"
+                                type="text"
+                                label={t('contact.form.name')}
+                                placeholder={t('contact.form.name_placeholder')}
+                                icon={User}
+                            />
+
+                            <FormInput
+                                id="email"
+                                type="email"
+                                label={t('contact.form.email')}
+                                placeholder={t('contact.form.email_placeholder')}
+                                icon={Mail}
+                            />
+
+                            <FormInput
+                                id="message"
+                                type="textarea"
+                                label={t('contact.form.message')}
+                                placeholder={t('contact.form.message_placeholder')}
+                            />
 
                             <button
                                 type="submit"
