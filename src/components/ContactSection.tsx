@@ -8,7 +8,7 @@ interface ContactSectionProps {
     visibleSections: Set<string>;
 }
 
-const FORM_ENDPOINT = "https://formsubmit.co/adil.houmadi.pfa@gmail.com";
+const FORM_ENDPOINT = "https://formsubmit.co/23b26bc4e224406c1a96a405d0cdd9c1";
 
 export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections }) => {
     const { t } = useTranslation();
