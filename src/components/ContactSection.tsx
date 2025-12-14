@@ -14,25 +14,24 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
         e.preventDefault();
         setFormStatus('sending');
 
-        const formData = new FormData(e.currentTarget);
+        const form = e.currentTarget;
+        const formData = new FormData(form);
 
         try {
-            const response = await fetch("https://formsubmit.co/ajax/b6c862fa953942f066ede6e8396a9643", {
+            const response = await fetch("https://formsubmit.co/b6c862fa953942f066ede6e8396a9643", {
                 method: "POST",
+                body: formData,
                 headers: {
                     'Accept': 'application/json'
-                },
-                body: formData
+                }
             });
-
-            const result = await response.json();
 
             if (response.ok) {
                 setFormStatus('success');
-                e.currentTarget.reset();
+                form.reset();
                 setTimeout(() => setFormStatus('idle'), 5000);
             } else {
-                console.error("FormSubmit Error:", result);
+                console.error("FormSubmit Error");
                 setFormStatus('error');
                 setTimeout(() => setFormStatus('idle'), 5000);
             }
@@ -117,7 +116,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ visibleSections 
                             }`}
                     >
                         <h3 className="text-2xl font-bold text-white mb-6">{t('contact.form.title')}</h3>
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form
+                            action="https://formsubmit.co/b6c862fa953942f066ede6e8396a9643"
+                            method="POST"
+                            onSubmit={handleSubmit}
+                            className="space-y-6"
+                        >
                             <input type="hidden" name="_subject" value="New Contact Form Submission" />
                             <input type="hidden" name="_template" value="table" />
 

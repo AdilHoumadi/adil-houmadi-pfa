@@ -6,8 +6,8 @@
         "contact": "Contact"
     },
     "hero": {
-        "title_start": "Ingénieur Senior Data &",
-        "title_end": "Streaming",
+        "title_start": "Senior Streaming & Data",
+        "title_end": "Solutions d'Ingénierie",
         "subtitle": "Architecture de plateformes de streaming de données résilientes à l'échelle du pétaoctet et infrastructures cloud",
         "bio": "Je transforme des défis de données complexes en systèmes de production fiables. Avec plus de 10 ans d'expertise approfondie en <1>Apache Kafka</1>, <3>Kubernetes</3> et <5>AWS</5>, j'aide les organisations à construire des architectures tolérantes aux pannes qui passent à l'échelle.",
         "contact_me": "Me Contacter",
